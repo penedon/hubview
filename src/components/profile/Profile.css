@@ -1,0 +1,129 @@
+.profile {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background-color: var(--var-color-white);
+    border-radius: 20px;
+    /* padding-bottom: 20px; */
+}
+
+.profileHeader {
+    text-align: center;
+}
+/* 
+.profileHeader .imgContainer {
+    position: relative;
+} */
+
+.imgBox {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 3px;
+    margin-top: -80px;
+    /* top: 0; left: 0; */
+    background-color: var(--var-color-white);
+    box-shadow: 0 0px 5px #777;
+}
+.imgBox img {
+    height: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profileHeader h1 {
+    position: relative;
+    margin:0;
+    font-size: 2.2em;
+    color: var(--var-color-apricot)
+}
+.profileHeader h1 a {
+    position: absolute;
+    color: var(--var-color-oslo-gray);
+    font-size: 15px;
+    padding: 5px;
+}
+.profileHeader h1 a:hover {
+    cursor: pointer;
+    color: var(--var-color-outer-space);
+}
+
+.profileHeader p {
+    margin: 0;
+    padding: 0 20px 15px 20px;
+}
+.profileHeader .login {
+    color: var(--var-color-oslo-gray)
+}
+.profileHeader .bio {
+    font-size: 0.9em;
+    color: var(--var-color-outer-space);
+}
+
+.leftHeader, .rightHeader {
+    color: var(--var-color-oslo-gray);
+    font-size: 0.8em;
+}
+
+.rightHeader {
+    /* text-align: left; */
+    float: right;
+}
+
+.profileHeader ul {
+    margin-top: -1px;
+    padding: 10px 0;
+    list-style-type: none;
+    text-align: left;
+
+}
+.profileHeader ul li{
+    /* margin-top: -1px; */
+    padding: 10px;
+    display: inline;
+    /* border: 1px solid var(--var-color-white); */
+    /* margin-right: -1px; */
+}
+.profileHeader .leftHeader ul li:first-child {
+    border-top-left-radius: 20px;
+    padding-left: 15px;
+}
+.profileHeader .rightHeader ul li:first-child {
+    border-top-right-radius: 20px;
+    padding-right: 15px;
+}
+.profileHeader ul li:hover {
+    /* background-color: var(--var-color-iron);
+    color: var(--var-color-outer-space); */
+    cursor: default;
+}
+
+.profileBody {
+    padding: 0 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .leftHeader, .rightHeader {
+        font-size: 0.6em;
+    }
+}
+
+@media only screen and (max-width: 574px) {
+    .leftHeader, .rightHeader {
+        font-size: 0.8em;
+    }
+    .rightHeader {
+        position: absolute;
+        right: 0;
+        top:0;
+    }
+    .profile {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+    .imgBox {
+        margin-top: 0;
+    }
+}

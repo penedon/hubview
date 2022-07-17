@@ -1,0 +1,104 @@
+.app, .view {
+  position: relative;
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+a {color: var(--var-color-outer-space) !important; text-decoration: none !important;}
+a:hover {color: var(--var-color-oslo-gray) !important}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* background: rgb(249,194,157) !important; */
+  background: linear-gradient(180deg, 
+                              var(--var-color-apricot-peach) 0%,
+                              var(--var-color-apricot) 100%) !important;
+  /* background-color: var(--var-color-apricot-peach) !important; */
+  color: var(--var-color-outer-space) !important;
+
+  --var-color-apricot: #f4a27e;
+  --var-color-apricot-peach: #f9c29d;
+  --var-color-corvette: #fcd4a4;
+  --var-color-colonial-white: #ffe6ab;
+
+  --var-color-charade: #0d0d0e;
+  --var-color-outer-space: #1f282c;
+  --var-color-oslo-gray: #90969a;
+  --var-color-loblolly: #bec8ce;
+  --var-color-iron: #dadfe2;
+  --var-color-white: #ffffff;
+
+  --var-color-daintree: #003141;
+
+  --var-color-gallery: #eaeaea;
+
+  --var-color-sea-pink: #df8088;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  appearance: none !important;
+}
+
+button svg {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+button p{
+  display: inline-block;
+}
+
+p {
+  margin-bottom: 0 !important
+}
+
+
+.btn-phover {
+  background-color: var(--var-color-apricot) !important;
+  border-color: var(--var-color-apricot) !important;
+}
+
+.btn-phover:hover {
+  background-color: var(--var-color-apricot-peach) !important;
+  border-color: var(--var-color-apricot-peach) !important;
+}
+
+.pageFooter {
+  width: 100vw;
+  text-align: center;
+  opacity: 0.7;
+  padding: 20px;
+}
+
+
+.headerSeparator {
+  color: var(--var-color-oslo-gray);
+}
+
+.invalidDiv {
+  padding: 50px;
+  text-align: center;
+}.invalidDiv svg {color: var(--var-color-sea-pink)}
+
+
+.noSelect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

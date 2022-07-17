@@ -1,0 +1,36 @@
+.hubCard {
+    /* color: var(--var-color-apricot); */
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s ease-in-out box-shadow,
+                0.3s ease-in-out border-radius;
+    border-radius: 0px;
+    color: var(--var-color-outer-space);
+    
+  }
+  .hubCard:not(.selected){box-shadow: 0 1px 0 var(--var-color-iron);}
+  .hubCard:not(.noHover):not(.selected):hover {
+    cursor: pointer;
+    box-shadow: 0 2px 10px var(--var-color-iron);
+    border-radius: 10px;
+  }
+  .hubCard.selected {
+    
+    color: var(--var-color-apricot);
+    border-bottom: 1px solid var(--var-color-apricot);
+  }
+  
+  .hubCardFooter {
+    padding: 5px 0;
+    font-size: 11px;
+    color: var(--var-color-oslo-gray);
+  }
+  
+  .hubCardFooter div {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .hubCardFooter span {
+    padding-left: 5px;
+  }
+  

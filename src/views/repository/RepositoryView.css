@@ -1,0 +1,35 @@
+.repository {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: 20px !important;
+    float: right;
+    padding: 0;
+    margin:0 !important;
+    margin-top: 9px !important;
+    /* margin-top: -35px !important; */
+}
+
+.backToProfile svg {margin-right: 10px;}
+.backToProfile {padding: 10px 0; display: inline-block;}
+
+.branchColumn {
+    border-right: 1px solid var(--var-color-iron);
+}
+.branchRowSeparator {display: none;}
+
+@media only screen and (max-width: 768px) {
+    .branchColumn {
+        border-right: none;
+    }
+    .branchRowSeparator {
+        margin: 10px 100px;
+        color: var(--var-color-apricot-peach);
+        height: 2px !important;
+        display: block;
+    }
+}
